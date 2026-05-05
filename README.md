@@ -38,6 +38,15 @@ Gera um relatório inteligente do clima.
   "email": "email@exemplo.com"
 }
 
+Response:
+{
+  "city": "Lisboa",
+  "temperature": 22,
+  "humidity": 60,
+  "condition": "céu limpo",
+  "report": "Hoje será um dia agradável..."
+}
+
 ⚙️ Setup local
 1. Clonar repositório
 git clone https://github.com/douglashnunes/weather-ai-project
