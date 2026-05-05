@@ -38,7 +38,7 @@ Gera um relatório inteligente do clima.
   "email": "email@exemplo.com"
 }
 
-Response:
+#### Response:
 {
   "city": "Lisboa",
   "temperature": 22,
@@ -46,6 +46,8 @@ Response:
   "condition": "céu limpo",
   "report": "Hoje será um dia agradável..."
 }
+
+
 
 ⚙️ Setup local
 1. Clonar repositório
