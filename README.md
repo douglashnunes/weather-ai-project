@@ -32,21 +32,17 @@ Gera um relatório inteligente do clima.
 
 #### Request:
 
-
+```json
 {
   "city": "Lisboa",
   "email": "email@exemplo.com"
 }
-
-#### Response:
-
-```json
 {
   "city": "Lisboa",
   "temperature": 22,
   "humidity": 60,
   "condition": "céu limpo",
-  "report": "Hoje será um dia agradável..."
+  "report": "Hoje será um dia agradável para atividades ao ar livre. Recomenda-se proteção solar e hidratação."
 }
 
 ⚙️ Setup local
@@ -58,23 +54,22 @@ python -m venv .venv
 source .venv/bin/activate
 3. Instalar dependências
 pip install -r requirements.txt
-4. Criar arquivo .env
+
+🔐 Variáveis de ambiente
+Crie um arquivo .env na raiz do projeto:
 OPENAI_KEY=...
 OPENWEATHER_KEY=...
 RESEND_KEY=...
-5. Rodar servidor
+4. Rodar servidor
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 Acesse:
-
 http://localhost:8000/docs
 🌐 Deploy
 
-O backend está deployado em:
-
+O backend está disponível em:
 https://weather-ai-project.onrender.com
+
 ⚠️ Observações
 O envio de emails via Resend pode exigir domínio verificado em produção
-O serviço pode entrar em modo “sleep” no plano gratuito do Render
-
-
+O backend pode entrar em modo "sleep" no plano gratuito do Render (demora alguns segundos para responder após inatividade)
