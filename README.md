@@ -44,7 +44,7 @@ Response:
   "humidity": 60,
   "condition": "céu limpo",
   "report": "Hoje será um dia agradável para atividades ao ar livre. Recomenda-se proteção solar e hidratação."
-}```
+}
 
 ⚙️ Setup local
 1. Clonar repositório
