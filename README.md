@@ -38,7 +38,7 @@ Gera um relatório inteligente do clima.
   "email": "email@exemplo.com"
 }
 
-#### Response:
+Response:
 {
   "city": "Lisboa",
   "temperature": 22,
@@ -47,5 +47,32 @@ Gera um relatório inteligente do clima.
   "report": "Hoje será um dia agradável..."
 }
 
+⚙️ Setup local
+1. Clonar repositório
+git clone https://github.com/douglashnunes/weather-ai-project
+cd weather-ai-project
+2. Criar ambiente virtual
+python -m venv .venv
+source .venv/bin/activate
+3. Instalar dependências
+pip install -r requirements.txt
+4. Criar arquivo .env
+OPENAI_KEY=...
+OPENWEATHER_KEY=...
+RESEND_KEY=...
+5. Rodar servidor
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+Acesse:
+
+http://localhost:8000/docs
+🌐 Deploy
+
+O backend está deployado em:
+
+https://weather-ai-project.onrender.com
+⚠️ Observações
+O envio de emails via Resend pode exigir domínio verificado em produção
+O serviço pode entrar em modo “sleep” no plano gratuito do Render
 
 
