@@ -38,7 +38,7 @@ Gera um relatório inteligente do clima.
   "email": "email@exemplo.com"
 }
 
-Setup local
+⚙️ Setup local
 1. Clonar repositório
 git clone https://github.com/douglashnunes/weather-ai-project
 cd weather-ai-project
@@ -61,10 +61,10 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 Acesse:
 http://localhost:8000/docs
 
-Deploy
+🌐 Deploy
 O backend está deployado em:
 https://weather-ai-project.onrender.com
 
-Observações
+⚠️ Observações
 O envio de emails via Resend pode exigir domínio verificado em produção
 O serviço pode entrar em modo “sleep” no plano gratuito do Render
