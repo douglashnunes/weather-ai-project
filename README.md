@@ -32,7 +32,7 @@ Gera um relatório inteligente do clima.
 
 #### Request:
 
-```json
+
 {
   "city": "Lisboa",
   "email": "email@exemplo.com"
