@@ -38,7 +38,9 @@ Gera um relatório inteligente do clima.
   "email": "email@exemplo.com"
 }
 
-Response:
+#### Response:
+
+```json
 {
   "city": "Lisboa",
   "temperature": 22,
