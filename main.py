@@ -6,6 +6,7 @@ import requests
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
+from fastapi import FastAPI, HTTPException
 
 load_dotenv()
 
@@ -41,7 +42,10 @@ def generate_report(data: WeatherRequest):
     response = requests.get(weather_url).json()
 
     if "main" not in response:
-        return {"error": "Cidade não encontrada"}
+        raise HTTPException(
+        status_code=404,
+        detail="Cidade não encontrada. Verifique o nome digitado."
+        )
 
     temp = response["main"]["temp"]
     humidity = response["main"]["humidity"]
